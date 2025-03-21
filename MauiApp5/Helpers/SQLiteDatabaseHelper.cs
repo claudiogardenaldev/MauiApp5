@@ -24,7 +24,7 @@ namespace MauiApp5.Helpers
         {
             string sql = "UPDATE Produto SET Descricao=?, Quantidade=?, Preco=? WHERE Id=?";
             return _conn.QueryAsync<Produto>(
-            sql, p.Descricao, p.Quantidade, p.Preco, p.Id
+            sql, p.Descrição, p.Quantidade, p.Preco, p.Id
             );
 
         }
